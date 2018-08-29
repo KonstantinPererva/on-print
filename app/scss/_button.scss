@@ -1,0 +1,49 @@
+.button {
+
+  &-submit {
+    width: 94px;
+    height: 25px;
+    background: $c-btn-form;
+    transition: .2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &__text {
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-family: $font-light;
+      letter-spacing: 1.2px;
+    }
+
+    &:hover {
+      background: $c-btn-form-hover;
+    }
+  }
+
+  &-registration {
+    width: 100%;
+    height: 25px;
+    background: $c-btn-form;
+    transition: .2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 7px;
+
+    &__text {
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-family: $font-light;
+      letter-spacing: 1.2px;
+    }
+
+    &:hover {
+      background: $c-btn-form-hover;
+    }
+  }
+}

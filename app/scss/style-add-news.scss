@@ -1,0 +1,24 @@
+@import "./variables";
+.form__btns button.button-submit {
+  padding: 0;
+  font-size: 10px;
+  color: #fff;
+  font-family: 'VAGRoundedLight', sans-serif;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: $c-btn-form;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+}
+.form__btns button.button-submit:hover {
+  background: $c-btn-form-hover;
+}
+.form__btns a,.form .checkbox + label {
+  font-size: 10px;
+  font-family: $font-light;
+  letter-spacing: 1px;
+}
+@import "./popup";
+@import "./button";
