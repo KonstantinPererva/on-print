@@ -1,0 +1,241 @@
+@import "../variables";
+
+.history {
+  margin: 30px 0;
+  overflow-x: auto;
+
+  @media (max-width: 767px) {
+    margin: 50px 15px;
+  }
+
+  &-wrap {
+    margin: 50px 0 0;
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 11px 0;
+
+      font-size: 14px;
+      font-family: $font-thin;
+      color: #fff;
+      letter-spacing: 2px;
+
+      background: #80c028;
+
+      &:nth-child(1) {
+        flex-basis: 10%;
+      }
+
+      &:nth-child(2) {
+        flex-basis: 15%;
+      }
+
+      &:nth-child(3) {
+        flex-basis: 10%;
+      }
+
+      &:nth-child(4) {
+        flex-basis: 65%;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+
+    &-row {
+      display: flex;
+      align-items: center;
+
+      border-bottom: 1px solid #000;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        padding: 19px 0 23px;
+
+        font-size: 14px;
+        font-family: $font-thin;
+        color: #000;
+        font-weight: 500;
+        letter-spacing: 1px;
+
+        &:nth-child(1) {
+          flex-basis: 10%;
+        }
+
+        &:nth-child(2) {
+          flex-basis: 15%;
+        }
+
+        &:nth-child(3) {
+          flex-basis: 10%;
+        }
+
+        &:nth-child(4) {
+          padding: 19px 15px 23px;
+          flex-basis: 65%;
+          flex-wrap: wrap;
+          text-align: justify;
+        }
+      }
+
+      img {
+        width: 30px;
+        height: 25px;
+        opacity: .5;
+      }
+    }
+  }
+
+  &-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 452px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__col {
+      display: flex;
+      align-items: center;
+    }
+
+    &-box {
+
+      @media (max-width: 452px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+      }
+
+      &__label {
+        margin: 0 10px;
+        font-size: 14px;
+        color: #000;
+        font-family: $font-thin;
+
+        @media (max-width: 452px) {
+          margin: 0 0 5px;
+          text-align: center;
+        }
+      }
+
+      &__field {
+        display: inline-block;
+        text-align: center;
+        max-width: 80px;
+        padding: 2px 5px;
+        font-size: 14px;
+        color: #000;
+        font-family: $font-thin;
+        border: 1px solid #000;
+        outline: none;
+
+        &::-webkit-input-placeholder {
+          font-size: 14px;
+          color: #000;
+          font-family: $font-thin;
+        }
+        &::-moz-placeholder {
+          font-size: 14px;
+          color: #000;
+          font-family: $font-thin;
+        }
+        &:-moz-placeholder {
+          font-size: 14px;
+          color: #000;
+          font-family: $font-thin;
+        }
+        &:-ms-input-placeholder {
+          font-size: 14px;
+          color: #000;
+          font-family: $font-thin;
+        }
+      }
+
+      &__submit {
+        padding: 3px 10px;
+        margin: 0 0 0 25px;
+
+        font-size: 14px;
+        color: #fff;
+        font-family: $font-thin;
+        text-transform: uppercase;
+
+        background: #80c028;
+        cursor: pointer;
+        outline: none;
+        border: none;
+
+        @media (max-width: 452px) {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid darken(#c5dc43, 15%);
+  background: #839d00;
+  border-radius: 50%;
+  box-shadow: inset 3px -1px 11px 2px #c5dc43;
+}
+
+.subnav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 0 30px;
+
+  &__item {
+    padding: 0 8px;
+    font-size: 15px;
+    color: #000;
+    font-family: $font-light;
+    letter-spacing: 1.7px;
+    opacity: .7;
+    cursor: pointer;
+
+    @media (max-width: 452px) {
+      text-align: center;
+    }
+
+    &:not(:first-child) {
+      border-left: 1px solid #000;
+    }
+
+    &.active {
+      opacity: 1;
+      cursor: default;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ON-print</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:300,400" rel="stylesheet">
+
+  <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="libs/Magnific-Popup/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/history/history.css">
+  <link rel="stylesheet" href="css/tab/tab.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header-wrap">
+        <div class="logo">
+          <h1 class="logo-head">
+            <a href="#" class="logo-head__link"><img src="img/logo.jpg" alt="logo"></a>
+          </h1>
+          <div class="logo-info">
+            <a href="#" class="logo-info__link">онлайн</a>
+            <a href="#" class="logo-info__link">сервис</a>
+            <a href="#" class="logo-info__link">печати</a>
+          </div>
+        </div>
+
+        <div class="registration">
+          <a href="#form-popup" class="registration__link popup-with-zoom-anim">Подать заявку на регистрацию</a>
+        </div>
+
+        <div class="header-contact">
+          <ul class="contact-list">
+            <li class="contact-list__item"><a href="tel:0500707999">(050) 07 07 999</a></li>
+            <li class="contact-list__item"><a href="tel:0670707999">(067) 07 07 999</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="history-wrap">
+        <nav class="subnav-list">
+          <a href="#" class="subnav-list__item">Пополнить баланс</a>
+          <a href="#" class="subnav-list__item active">История платежей</a>
+          <a href="#" class="subnav-list__item">Любой пункт</a>
+        </nav>
+
+        <div id="history">
+          <form class="history-form">
+            <div class="history-form__col">
+              <div class="history-form-box">
+                <label for="from" class="history-form-box__label">дата с </label>
+                <input type="text" id="from" class="history-form-box__field" placeholder="01.05.2018" required>
+              </div>
+
+              <div class="history-form-box">
+                <label for="to" class="history-form-box__label">по </label>
+                <input type="text" id="to" class="history-form-box__field" placeholder="14.05.2018" required>
+              </div>
+            </div>
+
+            <div class="history-form__col">
+              <div class="history-form-box">
+                <button type="submit" class="history-form-box__submit">применить</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="history">
+            <div class="history-head">
+              <div class="history-head__title">№</div>
+              <div class="history-head__title">Дата</div>
+              <div class="history-head__title">Сумма</div>
+              <div class="history-head__title">Информация о платеже</div>
+            </div>
+
+            <div class="history-content">
+              <div class="history-content-row">
+                <div class="history-content-row__item">000000</div>
+                <div class="history-content-row__item">14.05.2018 14:00</div>
+                <div class="history-content-row__item">99 999.00</div>
+                <div class="history-content-row__item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Accusantium aliquam assumenda at commodi, consequatur cupiditate doloremque doloribus esse id impedit,
+                  iusto modi nihil obcaecati rem saepe sapiente suscipit totam vel, voluptas voluptates. Animi,
+                  aspernatur atque cupiditate delectus facere illo iure iusto nulla quod soluta ut vero. Alias
+                  assumenda consectetur excepturi hic laboriosam libero quo veritatis! Aliquid commodi eius itaque
+                  modi necessitatibus nihil non nostrum quam repellendus temporibus! Cum, fuga itaque magni mollitia
+                  officiis optio. Ad corporis cum deleniti dolore dolorem fugiat fugit hic id, maiores molestias
+                  numquam quidem quis quisquam quos tenetur unde veniam. Aliquam amet animi ex sint. Totam?</p>
+                </div>
+              </div>
+
+              <div class="history-content-row">
+                <div class="history-content-row__item">000000</div>
+                <div class="history-content-row__item">10.05.2018 14:00</div>
+                <div class="history-content-row__item">-99 999.00</div>
+                <div class="history-content-row__item">оплата заказа №000000</div>
+              </div>
+
+              <div class="history-content-row">
+                <div class="history-content-row__item">305.357</div>
+                <div class="history-content-row__item">2018-07-03 12:32:55</div>
+                <div class="history-content-row__item">-451.54</div>
+                <div class="history-content-row__item">оплата заказа №11228491</div>
+              </div>
+
+              <div class="history-content-row">
+                <div class="history-content-row__item">3053230</div>
+                <div class="history-content-row__item">2018-07-04 13:18:47</div>
+                <div class="history-content-row__item">451.54</div>
+                <div class="history-content-row__item">оплата заказа liqpay</div>
+                <!--<div class="history-content-row__item"><div class="circle"></div></div>-->
+                <!--<div class="history-content-row__item"><img src="img/case.svg" alt="case"></div>-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#" class="nav-list__link"><span>сообщения</span></a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link"><span>профиль</span></a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link"><span>price лист</span></a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link"><span>информация</span> &nbsp > &nbsp Общая </a>
+          </li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link">Требования к макету</a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link">Об оплате</a></li>
+          <li class="nav-list__item"><a href="#" class="nav-list__link">О доставке</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+<div id="form-popup" class="zoom-anim-dialog mfp-hide">
+
+  <form class="form form_popup">
+    <h3 class="form__head">регистрация</h3>
+    <input type="text" class="form__field" placeholder="Фамилия*" required>
+    <input type="text" class="form__field" placeholder="Имя*" required>
+    <input type="text" class="form__field" placeholder="Отчество*" required>
+    <input type="text" class="form__field" placeholder="Телефон*" required>
+    <input type="text" class="form__field" placeholder="E-mail*" required>
+    <input type="text" class="form__field" placeholder="Город*" required>
+
+    <input type="checkbox" id="check2" class="checkbox checkbox_popup">
+    <label for="check2">Запомнить</label>
+
+    <div class="form__btns form__btns_popup">
+      <button type="submit">регистрация</button>
+      <a href="#">У меня уже есть аккаунт</a>
+    </div>
+  </form>
+
+</div>
+
+
+<script src="libs/jquery/jquery.js"></script>
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+<script src="libs/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+<script src="script/script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'VAGRoundedThin';
+  src:  url('../fonts/VAGRoundedThin/VAGRoundedThin.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'VAGRoundedLight';
+
+  src: url('../fonts/VAGRoundedLight/VAGRoundedLight.ttf') format("truetype");
+}
+
+
+@font-face {
+  font-family: 'VAG_Rounded_Regular';
+  src: url('../fonts/VAG_Rounded_Regular/VAG_Rounded_Regular.eot');
+  src: url('../fonts/VAG_Rounded_Regular/VAG_Rounded_Regular.eot') format("embedded-opentype"), url('../fonts/VAG_Rounded_Regular/VAG_Rounded_Regular.woff2') format("woff2"), url('../fonts/VAG_Rounded_Regular/VAG_Rounded_Regular.woff') format("woff"), url('../fonts/VAG_Rounded_Regular/VAG_Rounded_Regular.ttf') format("truetype"), url('../fonts/VAG_Rounded_Regular/VAG_Rounded_Regular.svg#VAG_Rounded_Regular') format("svg");
+}
+
+
+@font-face {
+  font-family: 'VAGRoundedBold';
+  src: url('../fonts/VAGRoundedBold/VAGRoundedBold.eot');
+  src: url('../fonts/VAGRoundedBold/VAGRoundedBold.eot') format("embedded-opentype"), url('../fonts/VAGRoundedBold/VAGRoundedBold.woff2') format("woff2"), url('../fonts/VAGRoundedBold/VAGRoundedBold.woff') format("woff"), url('../fonts/VAGRoundedBold/VAGRoundedBold.ttf') format("truetype"), url('../fonts/VAGRoundedBold/VAGRoundedBold.svg#VAGRoundedBold') format("svg");
+}
+
+$font-thin: 'VAGRoundedThin', sans-serif;
+$font-light: 'VAGRoundedLight', sans-serif;
+
+
+$font-regular: 'VAG_Rounded_Regular', sans-serif;
+$font-bold: 'VAGRoundedBold', sans-serif;
