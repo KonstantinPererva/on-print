@@ -1,0 +1,102 @@
+/*news*/
+.news {
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  &-wrap {
+    padding: 20px 10px 20px 45px;
+  }
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 0 -41px;
+    overflow: hidden;
+
+    &__item {
+      flex-shrink: 0;
+      margin: 0 41px;
+    }
+  }
+
+  &-card {
+    display: block;
+    width: 247px;
+    font-size: 10px;
+    font-family: $font-thin;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrap-img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+      height: 84px;
+    }
+
+    &__wrap-arrow {
+      text-align: right;
+    }
+
+    &-title {
+      width: 160px;
+      margin: 0;
+      padding: 0 0 10px;
+      font-weight: normal;
+
+      &__text {
+        flex-shrink: 0;
+        display: inline-block;
+        height: 24px;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+
+    &-date {
+
+      &__num {
+        flex-shrink: 0;
+        display: block;
+        text-align: right;
+        color: #707070;
+      }
+    }
+
+    &-descr {
+      padding: 6px 0 0;
+
+      &__text {
+        color: #707070;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+    }
+
+    &-arrow {
+      display: inline-block;
+      vertical-align: top;
+
+      &__ico {
+        display: block;
+      }
+    }
+  }
+}
